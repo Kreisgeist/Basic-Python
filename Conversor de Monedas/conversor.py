@@ -1,15 +1,37 @@
-pesos = input("¿Cuántos pesos mexicanos tienes?: ")
-pesos = float(pesos)
-valor_dolar = 21.75
-dolares = pesos / valor_dolar
-dolares = round(dolares, 2)
-dolares = str(dolares)
-print("Tienes $" + dolares + " dólares")
+menu = """
+Bienvenido al conversor de monedas 💰
 
-dolares = input("¿Cuantos dolares tienes?: ")
-dolares = float(dolares)
-valor_peso = 0.046
-pesos = dolares / valor_peso
-pesos = round(pesos, 2)
-pesos = str(pesos)
-print("Tienes $" + pesos + " pesos mexicanos")
+1 - Pesos colombianos
+2 - Pesos argentinos
+3 - Pesos mexicanos
+
+Elige una opción: """
+
+opcion = input(menu)
+
+if opcion == "1":
+    pesos = input("¿Cuántos pesos colombianos tienes?: ")
+    pesos = float(pesos)
+    valor_dolar = 3875
+    dolares = pesos / valor_dolar
+    dolares = round(dolares, 2)
+    dolares = str(dolares)
+    print("Tienes $" + dolares + " dólares")
+elif opcion == "2":
+    pesos = input("¿Cuántos pesos argentinos tienes?: ")
+    pesos = float(pesos)
+    valor_dolar = 65
+    dolares = pesos / valor_dolar
+    dolares = round(dolares, 2)
+    dolares = str(dolares)
+    print("Tienes $" + dolares + " dólares")
+elif opcion == "3":
+    pesos = input("¿Cuántos pesos mexicanos tienes?: ")
+    pesos = float(pesos)
+    valor_dolar = 21.75
+    dolares = pesos / valor_dolar
+    dolares = round(dolares, 2)
+    dolares = str(dolares)
+    print("Tienes $" + dolares + " dólares")
+else:
+    print("Ingresa una opcion correcta por favor")

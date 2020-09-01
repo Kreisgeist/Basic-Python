@@ -1,11 +1,11 @@
 def run():
-    potencia = 0
+    LIMITE = 1000000
     contador = 0
-    while potencia < 1000000:
+    potencia = 2 ** contador
+    while potencia < LIMITE:
+        print(f'2 elevado a la potencia {contador} es igual a = {potencia}')
+        contador += 1
         potencia = 2 ** contador
-        if potencia < 1000000:
-            print('2 elevado a la potencia ' + str(contador) + ' = ' + str(potencia))
-        contador = contador + 1
 
 
 if __name__ == '__main__':
